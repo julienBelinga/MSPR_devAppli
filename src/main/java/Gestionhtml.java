@@ -4,6 +4,12 @@ import java.util.List;
 
 public class Gestionhtml {
 
+
+
+
+
+
+
     public String GenererLiensAccueil() throws IOException {
         BufferedReader in = new BufferedReader(new FileReader("src/main/Txt/staff.txt"));
         String str;
@@ -48,11 +54,24 @@ public class Gestionhtml {
 
         }
 
+
+    public void SupprimmerAgentsAvantMAJ(){
+        File DossierAgents = new File("src/main/Html/Generation/Agents");
+
+        File[] ListeFichiersAgents = DossierAgents.listFiles();
+        for(File file : ListeFichiersAgents){
+            System.out.println("Suppresion de  "+ file.getName());
+            file.delete();
+        }
+
+    }
+
     public void GenererPageAgent() throws IOException {
         BufferedReader in = new BufferedReader(new FileReader("src/main/Txt/staff.txt"));
         String str;
 
         List<String> list = new ArrayList<String>();
+        SupprimmerAgentsAvantMAJ();
         while ((str = in.readLine()) != null)
         {
             list.add(str);
