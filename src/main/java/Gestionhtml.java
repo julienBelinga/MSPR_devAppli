@@ -11,6 +11,7 @@ public class Gestionhtml {
         List<String> list = new ArrayList<String>();
         while ((str = in.readLine()) != null) {
             list.add(str);
+
         }
 
         java.util.Collections.sort(list);
