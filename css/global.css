@@ -3,25 +3,30 @@
     src: url(../fonts/Roboto-Regular.ttf);
 }
 
-body{
-    font-family: Robotto;
+body {
+    font-family: Robotto, sans-serif;
 }
 
-#main-container{
+#main-container {
     margin-left: 20%;
     margin-right: 20%;
 }
-#material-list{
+
+#material-list {
     list-style: none;
 }
 
 /* Connection page */
-#connection-box{
-    font-family: Robotto;
+#connection-box {
+    font-family: Robotto, sans-serif;
     border: solid 1px;
     display: flex;
 }
 
-#list-agent{
-   list-style: none;
+.center {
+    text-align: center;
+}
+
+#list-agent {
+    list-style: none;
 }
