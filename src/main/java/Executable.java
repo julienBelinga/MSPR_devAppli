@@ -8,6 +8,7 @@ public class Executable {
         String LienDesAgents = InstanceGestion.GenererLiensAccueil();
         InstanceGestion.InsertionHTML("StrtoReplace", LienDesAgents);
         InstanceGestion.GenererPageAgent();
+        InstanceGestion.ajouterInfosAgent();
 
     }
 
